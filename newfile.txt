@@ -5,3 +5,149 @@ Seven planets – Mercury, Venus, Mars, Jupiter, Saturn, Uranus and Neptune – 
 The last time the seven planets aligned was April 8, 2024. While this is not exceeding rare, the next occurrence will not happen until 2040!
 
 The best chance to see as many planets as possible will be just briefly after sunset through Friday. As the Sun sets, Saturn and Mercury will also be setting, making them particularly difficult to see. So, there will be only a few minutes after sunset to catch all seven of them before they drop below the horizon.
+
+
+https://github.com/LantanaFL/LantanaFL.git
+
+
+
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\james>winget install --id Git.Git -e --source winget
+Found Git [Git.Git] Version 2.49.0
+This application is licensed to you by its owner.
+Microsoft is not responsible for, nor does it grant any licenses to, third-party packages.
+Downloading https://github.com/git-for-windows/git/releases/download/v2.49.0.windows.1/Git-2.49.0-64-bit.exe
+  ██████████████████████████████  67.0 MB / 67.0 MB
+Successfully verified installer hash
+Starting package install...
+The installer will request to run as administrator, expect a prompt.
+Successfully installed
+
+C:\Users\james>dir
+ Volume in drive C is OS
+ Volume Serial Number is C451-D868
+
+ Directory of C:\Users\james
+
+03/19/2025  03:11 PM    <DIR>          .
+01/30/2025  07:17 PM    <DIR>          ..
+01/30/2025  07:23 PM    <DIR>          Contacts
+09/12/2024  12:03 PM    <DIR>          Documents
+04/07/2025  09:35 AM    <DIR>          Downloads
+01/30/2025  07:23 PM    <DIR>          Favorites
+01/30/2025  07:23 PM    <DIR>          Links
+01/30/2025  07:23 PM    <DIR>          Music
+04/06/2025  03:28 PM    <DIR>          OneDrive
+01/30/2025  07:23 PM    <DIR>          Saved Games
+01/30/2025  07:23 PM    <DIR>          Searches
+01/30/2025  07:23 PM    <DIR>          Videos
+               0 File(s)              0 bytes
+              12 Dir(s)  432,438,005,760 bytes free
+
+C:\Users\james>mkdir myproject
+
+C:\Users\james>cd myproject
+
+C:\Users\james\myproject>git init
+Initialized empty Git repository in C:/Users/james/myproject/.git/
+
+C:\Users\james\myproject>touch newfile.txt
+'touch' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\james\myproject>dir
+ Volume in drive C is OS
+ Volume Serial Number is C451-D868
+
+ Directory of C:\Users\james\myproject
+
+04/07/2025  09:46 AM    <DIR>          .
+04/07/2025  09:40 AM    <DIR>          ..
+04/07/2025  09:46 AM             1,168 newfile.txt
+               1 File(s)          1,168 bytes
+               2 Dir(s)  432,438,611,968 bytes free
+
+C:\Users\james\myproject>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        newfile.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\james\myproject>git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Disable this message with "git config set advice.addEmptyPathspec false"
+
+C:\Users\james\myproject>git add .
+
+C:\Users\james\myproject>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   newfile.txt
+
+
+C:\Users\james\myproject>git commit -m 'test commit'
+error: pathspec 'commit'' did not match any file(s) known to git
+
+C:\Users\james\myproject>git commit -m "test commit"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'james@DESKTOP-IQGUI6C.(none)')
+
+C:\Users\james\myproject>git config --global user.email "jamesjtye@gmail.com"
+
+C:\Users\james\myproject>git config --global user.name "LantanaFL"
+
+C:\Users\james\myproject>git commit -m "test commit"
+[master (root-commit) 0958e08] test commit
+ 1 file changed, 7 insertions(+)
+ create mode 100644 newfile.txt
+
+C:\Users\james\myproject>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\james\myproject>git checkout -b testbranch
+Switched to a new branch 'testbranch'
+
+C:\Users\james\myproject>git status
+On branch testbranch
+nothing to commit, working tree clean
+
+C:\Users\james\myproject>git remote add origin https://github.com/LantanaFL/LantanaFL.git
+
+C:\Users\james\myproject>git branch -M main
+
+C:\Users\james\myproject>git push -u origin main
+info: please complete authentication in your browser...
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 836 bytes | 836.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/LantanaFL/LantanaFL.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+C:\Users\james\myproject>git push -u origin maingit push -u origin main
