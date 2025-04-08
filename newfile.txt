@@ -95,10 +95,6 @@ Changes to be committed:
   (use "git rm --cached <file>..." to unstage)
         new file:   newfile.txt
 
-
-C:\Users\james\myproject>git commit -m 'test commit'
-error: pathspec 'commit'' did not match any file(s) known to git
-
 C:\Users\james\myproject>git commit -m "test commit"
 Author identity unknown
 
@@ -150,4 +146,5 @@ To https://github.com/LantanaFL/LantanaFL.git
  * [new branch]      main -> main
 branch 'main' set up to track 'origin/main'.
 
-C:\Users\james\myproject>git push -u origin maingit push -u origin main
+
+A pull request (or PR) is a way to alert a repo's owners that you want to make some changes to their code. It allows them to review the code and make sure it looks good before putting your changes on the primary branch.
