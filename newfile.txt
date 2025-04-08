@@ -6,10 +6,11 @@ The last time the seven planets aligned was April 8, 2024. While this is not exc
 
 The best chance to see as many planets as possible will be just briefly after sunset through Friday. As the Sun sets, Saturn and Mercury will also be setting, making them particularly difficult to see. So, there will be only a few minutes after sunset to catch all seven of them before they drop below the horizon.
 
+************************************************************************************************************************************************************
 
 https://github.com/LantanaFL/LantanaFL.git
 
-
+***********************************************************************************************************************************************************
 
 (c) Microsoft Corporation. All rights reserved.
 
@@ -52,21 +53,6 @@ C:\Users\james>cd myproject
 C:\Users\james\myproject>git init
 Initialized empty Git repository in C:/Users/james/myproject/.git/
 
-C:\Users\james\myproject>touch newfile.txt
-'touch' is not recognized as an internal or external command,
-operable program or batch file.
-
-C:\Users\james\myproject>dir
- Volume in drive C is OS
- Volume Serial Number is C451-D868
-
- Directory of C:\Users\james\myproject
-
-04/07/2025  09:46 AM    <DIR>          .
-04/07/2025  09:40 AM    <DIR>          ..
-04/07/2025  09:46 AM             1,168 newfile.txt
-               1 File(s)          1,168 bytes
-               2 Dir(s)  432,438,611,968 bytes free
 
 C:\Users\james\myproject>git status
 On branch master
@@ -146,5 +132,5 @@ To https://github.com/LantanaFL/LantanaFL.git
  * [new branch]      main -> main
 branch 'main' set up to track 'origin/main'.
 
-
+A pull request is a proposal to merge a set of changes from one branch into another. In a pull request, collaborators can review and discuss the proposed set of changes before they integrate the changes into the main codebase. Pull requests display the differences, or diffs, between the content in the source branch and the content in the target branch.
 A pull request (or PR) is a way to alert a repo's owners that you want to make some changes to their code. It allows them to review the code and make sure it looks good before putting your changes on the primary branch.
